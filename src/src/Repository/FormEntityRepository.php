@@ -9,14 +9,14 @@ use Doctrine\Persistence\ManagerRegistry;
 /**
  * @extends ServiceEntityRepository<FormEntity>
  */
-class formularycontainer extends ServiceEntityRepository
+class FormEntityRepository extends ServiceEntityRepository
 {
-    public function __construct(ManagerRegistry $registry)
-    {
-        parent::__construct($registry, FormEntity::class);
-    }
+  public function __construct(ManagerRegistry $registry)
+  {
+    parent::__construct($registry, FormEntity::class);
+  }
 
-//    /**
+  //    /**
 //     * @return FormEntity[] Returns an array of FormEntity objects
 //     */
 //    public function findByExampleField($value): array
@@ -31,7 +31,7 @@ class formularycontainer extends ServiceEntityRepository
 //        ;
 //    }
 
-//    public function findOneBySomeField($value): ?FormEntity
+  //    public function findOneBySomeField($value): ?FormEntity
 //    {
 //        return $this->createQueryBuilder('f')
 //            ->andWhere('f.exampleField = :val')
